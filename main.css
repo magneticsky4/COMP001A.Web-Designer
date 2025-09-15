@@ -1,1 +1,19 @@
+/* main.css - External stylesheet for all pages */
 
+/* Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Body background-color requirement (single selector) */
+body {
+  font-family: "Segoe UI", Roboto, Arial, sans-serif;
+  background-color: #f5f7fb; /* body background color */
+  color: #222;
+  line-height: 1.5;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
