@@ -17,3 +17,111 @@ body {
   display: flex;
   flex-direction: column;
 }
+
+/* Layout containers */
+.header-wrapper,
+.main-wrapper,
+.footer-wrapper {
+  width: 100%;
+  max-width: 980px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 16px;
+}
+
+/* Top navigation (consistent across pages) */
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  margin-bottom: 12px;
+}
+header nav a {
+  text-decoration: none;   /* links normal state */
+  color: #064663;
+  padding: 6px 10px;
+  border-radius: 6px;
+}
+header nav a:hover {
+  background-color: #064663; /* conditional pseudo-class */
+  color: #fff;
+}
+
+/* Multiple selectors example (applies same style to h1, h2, h3) */
+h1, h2, h3 {
+  color: #053e3e;
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+
+/* Main content area centered */
+main {
+  flex: 1;
+  display: block;
+}
+
+/* Card class (class selector requirement) */
+.feature-card {
+  border: 1px solid #d7e6e6;
+  background: #ffffff;
+  padding: 14px;
+  border-radius: 10px;
+  margin-bottom: 16px;
+  box-shadow: 0 4px 8px rgba(3,10,10,0.03);
+}
+
+/* Sub-element selector (p a) */
+p a {
+  color: #0b6b6b; /* sub-element color */
+  text-decoration: underline;
+}
+
+/* ID selector example */
+#special-feature {
+  background: linear-gradient(90deg, #f7fffb, #e6f9f5);
+  border: 2px solid #04BFAD;
+}
+
+/* Footer styling */
+footer {
+  margin-top: 20px;
+  border-top: 1px solid #e2e8eb;
+  padding-top: 12px;
+  color: #556;
+  font-size: 0.95rem;
+  background: transparent;
+}
+
+/* Simple responsive */
+@media (max-width: 640px) {
+  header nav ul {
+    flex-direction: column;
+    gap: 8px;
+  }
+  .header-wrapper, .main-wrapper, .footer-wrapper {
+    padding: 12px;
+  }
+}
+
+/* Button styles used on conditional-css.html */
+button.primary {
+  background: #064663;
+  color: #fff;
+  border: none;
+  padding: 10px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+}
+button.primary:hover {
+  background: #04BFAD;
+  color: #063842;
+}
+
+/* Style for images */
+img.responsive {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
