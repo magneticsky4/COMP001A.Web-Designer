@@ -19,3 +19,52 @@
     nav.toc ul { list-style: decimal inside; margin-bottom: 12px;}
   </style>
 </head>
+<body>
+  <header class="header-wrapper">
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="css-application.html">Three Ways to Apply CSS</a></li>
+        <li><a href="built-in-elements.html">Built-in Elements</a></li>
+        <li><a href="classes-ids.html">Classes & IDs</a></li>
+        <li><a href="conditional-css.html">Conditional CSS</a></li>
+      </ul>
+    </nav>
+    <h1>Three Ways to Apply CSS</h1>
+  </header>
+
+  <main class="main-wrapper">
+    <!-- Table of contents (in-page links) -->
+    <nav class="toc" aria-label="Table of contents">
+      <h2>Table of Contents</h2>
+      <ul>
+        <li><a href="#external">External CSS</a></li>
+        <li><a href="#internal">Internal CSS</a></li>
+        <li><a href="#inline">Inline CSS</a></li>
+      </ul>
+    </nav>
+
+    <section id="external">
+      <h2>External CSS</h2>
+      <!-- Method 1: External CSS Part 2 -->
+      <p class="feature-card">This paragraph is styled by the external stylesheet <code>main.css</code>. The <code>.feature-card</code> class demonstrates class selectors and consistent card styling across pages.</p>
+    </section>
+
+    <section id="internal">
+      <h2>Internal CSS</h2>
+      <!-- Method 2: Internal CSS Part 2 -->
+      <p class="internal-css">This paragraph is styled with internal CSS inside the &lt;head&gt; of this page.</p>
+    </section>
+
+    <section id="inline">
+      <h2>Inline CSS</h2>
+      <!-- Method 3: Inline CSS -->
+      <p style="color: #04BFAD; font-weight: 600;">This paragraph uses inline CSS (style attribute). Inline styles should be minimized but are demonstrated here to meet the assignment requirement.</p>
+    </section>
+  </main>
+
+  <footer class="footer-wrapper">
+    <p>&copy; 2025 Julian Acosta — <a href="https://github.com/magneticsky4" target="_blank">GitHub</a></p>
+  </footer>
+</body>
+</html>
